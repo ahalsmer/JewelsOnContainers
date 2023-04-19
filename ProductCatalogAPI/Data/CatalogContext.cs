@@ -10,9 +10,7 @@ namespace ProductCatalogAPI.Data
         // use a instance of your database as the parameter and pass that into your base class
         // the base class takes the database information to construct your tables and so on
         public CatalogContext(DbContextOptions options) : base(options)
-        { 
-            
-        }
+        { }
         public DbSet<CatalogType> CatalogTypes {  get; set; }
         public DbSet<CatalogBrand> CatalogBrands { get; set; }
         public DbSet<CatalogItem> Catalog { get; set; }
