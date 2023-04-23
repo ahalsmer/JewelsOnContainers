@@ -15,7 +15,7 @@ namespace ProductCatalogAPI.Data
         public DbSet<CatalogBrand> CatalogBrands { get; set; }
         public DbSet<CatalogItem> Catalog { get; set; }
 
-        // model means table, so OnModelCreating  is giving instructions on how to change the tables that you are creating
+        // model means table, so OnModelCreating is giving instructions on how to change the tables that you are creating
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<CatalogType>(e =>

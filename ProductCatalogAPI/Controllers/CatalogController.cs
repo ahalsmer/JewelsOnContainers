@@ -46,7 +46,7 @@ namespace ProductCatalogAPI.Controllers
                 .Skip(pageIndex * pageSize)
                 // Take the remaining elements within the amount set in your pageSize.
                 .Take(pageSize)
-                // Convert those elemennts into a list.
+                // Convert those elements into a list.
                 .ToListAsync();
             // Change the default picture urls in your table with a method that takes in and manipulates items.
             items = ChangePictureUrl(items);
